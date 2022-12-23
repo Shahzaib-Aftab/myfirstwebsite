@@ -1,0 +1,44 @@
+.cover {
+  height: 100vh;
+  text-align: center;
+}
+
+.row-margin {
+  margin: 4vh auto;
+  padding-top: 50px;
+}
+
+body {
+  background: #FF4E50;
+  background: -webkit-linear-gradient(135deg, #5c0d0e, #5846f8);
+  background: linear-gradient(135deg, #7c1617, #63c3f0);
+}
+
+.header {
+  color: #fff;
+}
+
+h1 {
+  font-family: "Pacifico";
+  text-decoration: underline;
+}
+
+.btn-default {
+  background-color: rgb(245, 35, 35);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+#inputPalindrome
+{
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+.alert-info
+{
+  font-size: 20px;
+  color: rgb(15, 5, 5);
+}
