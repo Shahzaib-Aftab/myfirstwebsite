@@ -1,26 +1,29 @@
 // program to check if the string is palindrome or not
 
-var checkButton = document.getElementById("checkPalindrome");
-
-function isPalindrome(str) {
-  'use strict';
-  
-  str = str.replace(/[^a-z0-9]+/gi, "").toLowerCase();
-  var reversedStr = str.split("").reverse().join("");
-  return str === reversedStr;
-}
-
-checkButton.addEventListener("click", function() {
-  'use strict';
-  
-  var value = document.getElementById("inputPalindrome").value;
-  var notification = document.getElementById("notification");
-  
-  if(isPalindrome(value)) {
-    notification.innerHTML = "Yay! You've got yourself a palindrome";
-    notification.className = "alert alert-success";
-  } else {
-    notification.innerHTML = "Nay! Ain't no palindrome";
+function palindrome()
+{
+  var x = document.getElementById("inputPalindrome").value;
+  var y = "" ;
+  for( i=x.length-1;i>=0;i--)
+  {
+    y += x [i];
+  }
+  if(x.length <=10)
+  {
+    if(x == y)
+    {
+      notification.innerHTML = "Yay! You've got yourself a palindrome";
+      notification.className = "alert alert-success";
+    }
+    else
+    {
+      notification.innerHTML = "No! You Aren't palindrome";
+      notification.className = "alert alert-danger";
+    }
+  }
+  else
+  {
+    notification.innerHTML = "Your String is Very long";
     notification.className = "alert alert-danger";
   }
-});
+}
